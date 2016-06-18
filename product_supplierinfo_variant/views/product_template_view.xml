@@ -16,19 +16,5 @@
 			</field>
 		</record>
 
-		<record id="product_normal_form_view_sellers" model="ir.ui.view">
-			<field name="name">product.product.form.sellers</field>
-			<field name="model">product.product</field>
-			<field name="inherit_id" ref="product.product_normal_form_view"/>
-			<field name="arch" type="xml">
-				<xpath expr="//form/sheet/notebook/page/separator" position="attributes">
-					<attribute name="invisible">0</attribute>
-				</xpath>
-				<field name="seller_ids" position="attributes">
-					<attribute name="invisible">0</attribute>
-				</field>
-			</field>
-		</record>
-
 	</data>
 </openerp>
